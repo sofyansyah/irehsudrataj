@@ -18,6 +18,7 @@ html {
 .h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6 {
     font-family: 'Gibson' !important;
     font-weight: 400;
+    line-height: 1 !important;
 }    
 .fonthome {
   color: #fff;
@@ -108,9 +109,12 @@ p{
     }
 .page1 {
   background-color: #ec5f4c;
+  background-image: url('file:///Applications/MAMP/htdocs/irehsudrataj/public/img/header.jpeg');
+  background-size: cover;
+  background-attachment: fixed;
 }
 .page2 {
-  background-color: #f3858c;
+  background-color: #ec5f4c;
 }
 .page3 {
   background-color: #ffb527;
