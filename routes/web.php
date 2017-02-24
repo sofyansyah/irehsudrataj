@@ -16,7 +16,7 @@
 
 Route::get('/','IndexController@home');
 Route::get('/profile', function(){return view('profile');});
-
-
+Route::get('/login', function(){return view('login');});
+Route::get('/browse', function(){return view('browse');});
 
 

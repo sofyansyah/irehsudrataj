@@ -1,55 +1,98 @@
 @extends('layout.master')
+
 @section('content')
 
-<nav class="navbar navbar-default">
+<nav class="navbar navbar-fixed-top">
   <div class="container-fluid">
     <div class="navbar-header">
-      <a class="navbar-brand" href="#">Bagidelo</a>
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+      <a class="navbar-brand" href="#" style="color:#fff; font-family: 'Madita';"">Bagidelo</a>
     </div>
-    <form class="navbar-form navbar-left">
+    <div class="collapse navbar-collapse" id="myNavbar">
+<form class="navbar-form navbar-left">
       <div class="input-group">
-        <input type="text" class="form-control" placeholder="Search">
-        <div class="input-group-btn">
-          <button class="btn btn-default" type="submit">
+          <div class="input-group-btn">
+          <button class="btn btn-default" type="submit" style="width:40px;">
             <i class="glyphicon glyphicon-search"></i>
           </button>
         </div>
+        <input type="text" class="form-control" placeholder="Search"> 
       </div>
     </form>
+      <ul class="nav navbar-nav navbar-right">
+        <a href="#"><button class="btn btn-danger navbar-btn" style="border:none; background-color:#c0392b;">Sign Up</button></a>
+        <a href="#"><button class="btn btn-default navbar-btn" style="border:none; color:#c0392b">Sign In</button></a>
+      </ul>
+    </div>
   </div>
 </nav>
+    
 
-<div class="container text-center">    
+<br/>
+
+<div class="container text-center" style="margin-top:100px;">    
   <div class="row">
-    <div class="col-sm-3 well">
-      <div class="well">
-        
-        <img src="public/img/logo.jpg" class="img-circle" height="150" width="150" alt="Avatar"><br><br>
+    <div class="col-sm-2">
+      
+        <img src="public/img/logo1.jpg" class="img-circle" height="150" width="150" alt="Avatar" /><br/></br>
           <p>Lorem Ipsum</p>
-      </div>
+     
       <div class="well">
-        <p>Skill</p>
+        <p>Lorem Ipsum</p>
         <p>
           <span class="label label-default">Photoshop</span>
           <span class="label label-primary">Illustrator</span>
           <span class="label label-success">After Effect</span>
           <span class="label label-info">PHP</span>
           <span class="label label-warning">Java Script</span>
-          <span class="label label-danger">Android</span>
+          <span class="label label-danger">Java</span>
         </p>
       </div>
       <div class="alert alert-success fade in">
         <a href="#" class="close" data-dismiss="alert" aria-label="close">×</a>
-        <p><strong>Ey!</strong></p>
-        People are looking at your profile. Find out who.
+        <p><strong>Lorem Ipsum</strong></p>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut vel risus eros.
       </div>
-      <p><a href="#">Link</a></p>
-      <p><a href="#">Link</a></p>
-      <p><a href="#">Link</a></p>
+        <p>Lorem Ipsum</p>
+        <div class="row">
+        <div class="col-sm-12" style="text-align:left;">
+        <img src="public/img/agita.png" class="img-circle" height="50" width="50" alt="Avatar"><br/>   
+            </div></div><br>
+        <p>Lorem Ipsum</p>
+      <div class="row">
+        <div class="col-sm-4">
+        <img src="public/img/gua.png" class="img-circle" height="50" width="50" alt="Avatar"><br/>
+          </div>
+          <div class="col-sm-4">
+         <img src="public/img/heri.png" class="img-circle" height="50" width="50" alt="Avatar">   
     </div>
+           <div class="col-sm-4">
+         <img src="public/img/febi.png" class="img-circle" height="50" width="50" alt="Avatar">
+    </div>
+        </div>
+        <br>
+           <div class="row">
+        <div class="col-sm-4">
+        <img src="public/img/wara.png" class="img-circle" height="50" width="50" alt="Avatar"><br/>
+          </div>
+          <div class="col-sm-4">
+         <img src="public/img/rio.png" class="img-circle" height="50" width="50" alt="Avatar">
+    </div>
+           <div class="col-sm-4">
+         <img src="public/img/nadia.png" class="img-circle" height="50" width="50" alt="Avatar">
+    </div>
+        </div>
+        </div>
+
+  
+      
     <div class="col-sm-7">
-    <div class="row">
-          
+        
+    <!--<div class="row">   
         <div class="col-sm-12">
           <div class="panel panel-default text-left">
             <div class="panel-body" style="height:200px; padding:0;">
@@ -57,10 +100,27 @@
               </div>
             </div>
         </div>
+        </div>-->
+        
+        <div class="row">
+        <div class="col-sm-12">
+          <div class="panel panel-default text-left" style="border:none;">
+            <ul class="nav nav-tabs">
+			<li class="active">
+            <a  href="#1" data-toggle="tab">Activity</a>
+			</li>
+            <li><a href="#2" data-toggle="tab">About Us</a>
+                </li>
+			<li><a href="#3" data-toggle="tab">Meeting</a>
+			</li>
+			<li><a href="#4" data-toggle="tab">Message</a>
+			</li>
+		</ul>             
+          </div>
         </div>
+      </div>
         
       <div class="row">
-          
         <div class="col-sm-12">
           <div class="panel panel-default text-left">
             <div class="panel-body">
@@ -68,89 +128,50 @@
               <button type="button" class="btn btn-default btn-sm">
                 <!--<span class="glyphicon glyphicon-thumbs-up"></span>-->Update
               </button> 
-              <button type="button" class="btn btn-default btn-sm">
-                <!--<span class="glyphicon glyphicon-thumbs-up"></span>-->Attach File
-              </button>
-                 <button type="button" class="btn btn-default btn-sm">
-                <!--<span class="glyphicon glyphicon-thumbs-up"></span>-->Picture
-              </button>   
             </div>
           </div>
         </div>
       </div>
+        
+      
       
       <div class="row">
         <div class="col-sm-3">
-          <div class="well">
-           <img src="public/img/agita.png" class="img-circle" height="55" width="55" alt="Avatar">
-            <p>Afita</p>
-          </div>
+          <div class="thumbnail">
+              <img src="public/img/gua.png" class="img-circle" height="80" width="80" alt="Avatar">
+            </div><!-- /thumbnail -->    
+            <p>Gua</p>
         </div>
         <div class="col-sm-9">
-          <div class="well">
-            <p>Just Forgot that I had to mention something about someone to someone about how I forgot something, but now I forgot it. Ahh, forget it! Or wait. I remember.... no I don't.</p>
+          <div class="panel panel-default">
+              <div class="panel-heading">
+                  <strong>gua</strong> <span class="text-muted" style="text-align:left;">update 5 days ago</span>
+              </div>
+              <div class="panel-body">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut vel risus eros. Cras ac viverra mauris, nec ornare tortor. Cras euismod egestas neque a luctus. Phasellus dapibus convallis ligula, sed tempus lacus dignissim quis. Duis imperdiet ut odio ac consectetur. Proin non tortor lectus
+              </div><!-- /panel-body -->
+            </div><!-- /panel panel-default -->
           </div>
         </div>
-      </div>
-      <div class="row">
-        <div class="col-sm-3">
-          <div class="well">
-           <img src="public/img/febi.png" class="img-circle" height="55" width="55" alt="Avatar">
-            <p>Febi</p>
-          </div>
-        </div>
-        <div class="col-sm-9">
-          <div class="well">
-            <p>Just Forgot that I had to mention something about someone to someone about how I forgot something, but now I forgot it. Ahh, forget it! Or wait. I remember.... no I don't.</p>
-          </div>
-        </div>
-      </div>
-      <div class="row">
-        <div class="col-sm-3">
-          <div class="well">
-           <img src="public/img/gua.png" class="img-circle" height="55" width="55" alt="Avatar">
-              <p>Gua</p>
-          </div>
-        </div>
-        <div class="col-sm-9">
-          <div class="well">
-            <p>Just Forgot that I had to mention something about someone to someone about how I forgot something, but now I forgot it. Ahh, forget it! Or wait. I remember.... no I don't.</p>
-          </div>
-        </div>
-      </div>
-      <div class="row">
-        <div class="col-sm-3">
-          <div class="well">
-           <img src="public/img/heri.png" class="img-circle" height="55" width="55" alt="Avatar">
-            <p>heri</p>
-          </div>
-        </div>
-        <div class="col-sm-9">
-          <div class="well">
-            <p>Just Forgot that I had to mention something about someone to someone about how I forgot something, but now I forgot it. Ahh, forget it! Or wait. I remember.... no I don't.</p>
-          </div>
-        </div>
-      </div>     
+      
+      
+        
     </div>
-    <div class="col-sm-2 well">
-      <div class="thumbnail">
-        <p>Upcoming Events:</p>
-        <img src="public/img/smartphone.png" alt="Paris" width="400" height="300">
-        <p><strong>Sarinah</strong></p>
+    <div class="col-sm-3">
+<br><br>
+      <div class="thumbnail">    
+        <img src="public/img/peta.jpg" alt="Paris" width="400" height="400">
+          <p>Lorem Ipsum</p>
+        <!--<p><strong>Sarinah</strong></p>
         <p>Fri. 27 November 2016</p>
-        <button class="btn btn-primary">Info</button>
-      </div>      
-      <div class="well">
-        <p>ADS</p>
-      </div>
-      <div class="well">
-        <p>ADS</p>
-      </div>
-    </div>
-  </div>
+        <button class="btn btn-primary">Info</button>-->
+      </div>     
+     <!-- <div class="well" style="padding: 80px;">
+        <p style="vertical-align:center;">Advertising in Here</p>
+      </div>-->
 </div>
-<footer class="container-fluid text-center">
-  <p>Footer Text</p>
-</footer>
+</div>
+
+
 
 @endsection

@@ -1,7 +1,11 @@
 @extends('layout.master')
+@section('css_styles')
+    <link rel="stylesheet" href="{{asset('css/onepage-scroll.css')}}">
+    
+@endsection
 @section('content')
 
-<nav class="navbar navbar-default" style="margin:0px; border-radius:0px; border:none; padding:10px; background-color:#e74c3c;">
+<nav class="navbar" style="margin-bottom:0px !Important;">
   <div class="container-fluid">
     <div class="navbar-header">
       <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
@@ -9,7 +13,7 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>                        
       </button>
-      <a class="navbar-brand" href="#">Bagidelo</a>
+      <a class="navbar-brand" href="#" style="color:#fff; font-family: 'Madita';"">Bagidelo</a>
     </div>
     <div class="collapse navbar-collapse" id="myNavbar">
 <form class="navbar-form navbar-left">
@@ -32,61 +36,61 @@
     
        	
 <div class="wrapper">
-	  <div class="main">      
-	    
-      <section class="page1">
+	  <div class="main">   
+   	    
+      <section class="page1" style="background-color:#e74c3c;">
         <div class="container">
             <div class="row">
-              <div class="col-md-12 fonthome" style="margin-top:10%;">
-          <h2>Bagikan idemu dan temukan rekan <br/>untuk mewujudkannya!</h2>
-            <p >Bagidelo hadir untuk menyediakan ruang bagi para ideator dalam <br/>menyuarakan ide mereka dan menemukan rekan serta dukungan<br/> untuk mewujudkannya</p>
+              <div class="col-md-12" style="margin-top:10%;">
+          <h2 style="color:#fff; font-family: 'Gibson';">Bagikan idemu dan temukan rekan <br/>untuk mewujudkannya!</h2>
+            <p style="color:#fff;">Bagidelo hadir untuk menyediakan ruang bagi para ideator dalam <br/>menyuarakan ide mereka dan menemukan rekan serta dukungan<br/> untuk mewujudkannya</p>
   	    </div>
             </div>
           </div>
   	    <!--<img src="phones.png" alt="phones">-->
       </section>
 	    
-	    <section class="page2">
+	    <section class="page2" style="background-color:#EF9688;">
 	      <div class="container">
             <div class="row">
-              <div class="col-md-6 fonthome"style="margin-top:10%;">
-                <h2>Suarakan idemu</h2>
-            <p>Ide kecil mampu membuat perubahan besar,<br/>tapi semua itu tidak akan tercapai jika kamu<br/> diam dan tak berbuat apa-apa, mulai buat<br/>perubahan, posting idemu sekarang!</p>
+              <div class="col-md-6"style="margin-top:10%;">
+                <h2 style="color:#fff;">Suarakan idemu</h2>
+            <p style="color:#fff;">Ide kecil mampu membuat perubahan besar,<br/>tapi semua itu tidak akan tercapai jika kamu<br/> diam dan tak berbuat apa-apa, mulai buat<br/>perubahan, posting idemu sekarang!</p>
                 </div></div></div>
       </section>
                 
           
 	   
-	    <section class="page3">
+	    <section class="page3" style="background-color: #F1C40F;">
 	      <div class="container">
             <div class="row">
               <div class="col-md-6" style="margin-top:10%;">
                 </div>
-                <div class="col-md-6 fonthome" style="margin-top:10%;">
-                <h2>Temukan rekan<br/>untuk mewujudkannya</h2>
-              <p>Bagidelo hadir untuk menyediakan ruang bagi para ideator<br/>dalam menyuarakan ide mereka dan menemukan<br/>rekan serta dukungan untuk mewujudkannya.</p>
+                <div class="col-md-6" style="margin-top:10%;">
+                <h2 style="color:#fff;">Temukan rekan<br/>untuk mewujudkannya</h2>
+              <p style="color:#fff;">Bagidelo hadir untuk menyediakan ruang bagi para ideator<br/>dalam menyuarakan ide mereka dan menemukan<br/>rekan serta dukungan untuk mewujudkannya.</p>
   	    </div>
               </div>
             </div>
       </section>
           
-         <section class="page4">
+         <section class="page2" style="background-color: #3498db;">
             <div class="container">
             <div class="row">
-            <div class="col-md-6 fonthome" style="margin-top:10%;">
-                 <h2>Bangun dan kembangkan<br/>ide bersama-sama.</h2>
-              <p>jadilah inspirator bagi banyak orang dengan<br/> membangun, mengembangkan dan membagikan <br/>proses yang dilakukan</p>
+            <div class="col-md-6" style="margin-top:10%;">
+                 <h2 style="color:#fff;">Bangun dan kembangkan<br/>ide bersama-sama.</h2>
+              <p style="color:#fff;">jadilah inspirator bagi banyak orang dengan<br/> membangun, mengembangkan dan membagikan <br/>proses yang dilakukan</p>
                 </div>
               </div> 
 	      </div>
       </section>  
             
-            <section class="page5">
+            <section class="page1" style="background-color: #34495e;">
 	      <div class="container">
             <div class="row">
-              <div class="col-md-12 fonthome" style="margin-top:10%;">
-          <h2>Inspirasi yang menginspirasi</h2>
-              <p>Jadilah Ideator dan Inspirator sekarang!</p>
+              <div class="col-md-12" style="margin-top:10%;">
+          <h2 style="color:#fff;">Inspirasi yang menginspirasi</h2>
+              <p style="color:#fff;">Jadilah Ideator dan Inspirator sekarang!</p>
               <a href="#" class="btn btn-default" role="button" style="margin-bottom:10px; padding: 10px 80px;">Get Started</a><br/>
               <a href="#" class="btn btn-default" role="button" style="margin-bottom:10px; padding: 10px 95px;">Sign In</a>
   	    </div>
@@ -104,5 +108,21 @@
         <p style="color:#fff;">footer in here</p>
         </div>
           </footer>
+          @section('js')
+
+          <script src="{{asset('js/jquery.onepage-scroll.js')}}"></script>
+    
+<script>
+    $(document).ready(function(){
+      $(".main").onepage_scroll({
+        sectionContainer: "section",
+        responsiveFallback: 600,
+        loop: true
+      });
+    });
+    
+  </script>
+
+  @endsection
      
 @endsection
