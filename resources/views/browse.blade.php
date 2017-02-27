@@ -64,7 +64,7 @@ h2{margin-left:8px;}
   margin-bottom:20px;
 }
 .panel{
-  border:none;
+  border: none;
   box-shadow: none !important;
   -webkit-box-shadow: none !important;
 }

@@ -6,7 +6,7 @@ html {
     -moz-osx-font-smoothing: grayscale !important;
     }
     body {
-      background: #fff!important;
+      background: #fafafa!important;
       padding: 0;
       text-align: center;
       font-family: 'Helvetica';
@@ -25,6 +25,7 @@ h1, h2, h3, h4, h5, h6{
 p{
     font-family: 'Helvetica'!important;
     font-size: 12pt;
+    color: #333;
 }
     .wrapper {
     	height: 100% !important;
@@ -189,6 +190,6 @@ btn{
   border:none;
   border-radius:0px !important; 
   background-color:#fff;
-  padding-bottom: 5px;
-  border-bottom:0.5px solid #ddd;
+  padding: 10px;
+  border-bottom:0.5px solid #f2f2f2;
   }
