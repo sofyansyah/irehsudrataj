@@ -147,6 +147,8 @@ p{
 .dropdown-menu li a:hover{
   color:#dd5f4c!important;
 }
+.more-content {display:none;}
+.visible {display:block;}
 </style>
 
 @section('content')
@@ -224,19 +226,20 @@ p{
               <div class="col-md-1" style="float:left;">
                 <img src="{{asset('img/gua.png')}}" class="img-circle" width="32" height="32" style="margin-left:-15px;">
               </div>
-              <div class="col-md-9" style="padding:0px;">
+              <div class="col-md-9 col-xs-9" style="padding:0px;">
                 <h2 style="padding:0px; margin:0px;">Sofyan Syah</h2>
                 <p style="font-size: 12px;">Jakarta, Indonesia</p>
               </div>
               <div class="col-md-2" style="padding:0px;">
-              <a href="/" class="participating">Participating</a>
+              <a href="" class="participating">Participating</a>
               </div>
               <div class="col-md-12" style="padding:0px;">
 <hr/>
               <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.<br/>
-                Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-                Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-                </p>
+                Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                <div class="more-content">
+                <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                </p></div><p><a class="readmore" href="#" style="color:#dd5f4c;">Read more</a>
                 
                 <hr/>
                 <div class="comment">
@@ -266,6 +269,7 @@ p{
         </div>
       </div>
      </div>
+
 
 <!-- <div class="row">
           <div class="col-md-12 text-left">
@@ -343,7 +347,15 @@ p{
   
   
   </div>
-
-
+@section('js')
+<script>
+$(".readmore").on('click touchstart', function(event) {
+        var txt = $(".more-content").is(':visible') ? 'Read more' : 'Less';
+        $(this).parent().prev(".more-content").toggleClass("visible");
+        $(this).html(txt);
+        event.preventDefault();
+    });
+</script>
+@endsection
 
 @endsection
