@@ -20,12 +20,11 @@
   font-family: 'Helvetica';
   font-style: 'normal';
   font-weight: 400;
-  src: url('../fonts/helvetica-neue.eot');
+  src: url('../fonts/helvetica-neue.otf');
 }
-
 @font-face {
-  font-family: 'helveticabold';
-  font-style: 'Bold';
+  font-family: 'helvetica-bold';
+  font-style: 'normal';
   font-weight: 400;
-  src: url('../fonts/helvetica-bold.eot');
+  src: url('../fonts/helvetica-bold.otf');
 }

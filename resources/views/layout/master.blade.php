@@ -7,7 +7,7 @@
 	 <!-- Resource style -->
     <link rel="stylesheet" href="{{asset('css/bootstrap.css')}}">
     <link rel="stylesheet" href="{{asset('css/styles.css')}}">
-    <link rel="stylesheet" href="{{asset('css/fonts.css')}}">
+    <link rel="stylesheet" href="{{asset('css/font.css')}}">
 
 
 

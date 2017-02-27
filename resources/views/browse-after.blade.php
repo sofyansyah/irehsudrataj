@@ -124,12 +124,25 @@ padding-bottom: 20px;
 p{
   font-size:12pt;
 }
-@media screen (max-width: 767px){
+.dropdown-menu:before{
 
-.menu-sidebar{
-
+    position: absolute;
+    content: '';
+    display: block;
+    position: absolute;
+    top: -10px;
+    left: 120px;
+    border-bottom: solid 10px #fff;
+    border-left: solid 10px transparent;
+    border-right: solid 10px transparent;
 }
-} 
+.dropdown-menu {
+  border-color:#f9f9f9 !important;
+  box-shadow:none!important;
+}
+.dropdown-menu li a{
+  color:#aaa!important;
+}
 </style>
 
 @section('content')
@@ -206,7 +219,7 @@ p{
                 <img src="{{asset('img/gua.png')}}" class="img-circle" width="55" height="55" style="margin-left:-15px;">
               </div>
               <div class="col-md-10" style="padding:0px;">
-                <h2 style="padding:0px; margin:0px;"><b> Weekend Mengajar</b></h2>
+                <h2 style="padding:0px; margin:0px;">Weekend Mengajar</h2>
                 <p style="font-size: 10pt;">Ideator by<a href="" style="color:#dd5f4c;"> Sofyan</a><i> 2 Days ago</i></p>
               </div>
                 <p> "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
