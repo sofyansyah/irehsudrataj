@@ -22,3 +22,10 @@
   font-weight: 400;
   src: url('../fonts/helvetica-neue.eot');
 }
+
+@font-face {
+  font-family: 'helveticabold';
+  font-style: 'Bold';
+  font-weight: 400;
+  src: url('../fonts/helvetica-bold.eot');
+}

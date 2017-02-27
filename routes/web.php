@@ -18,5 +18,10 @@ Route::get('/','IndexController@home');
 Route::get('/profile', function(){return view('profile');});
 Route::get('/login', function(){return view('login');});
 Route::get('/browse', function(){return view('browse');});
+Route::get('/browse-after', function(){return view('browse-after');});
 
 
+
+Auth::routes();
+
+Route::get('/home', 'HomeController@index');

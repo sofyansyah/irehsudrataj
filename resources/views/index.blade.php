@@ -13,22 +13,17 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>                        
       </button>
-      <a class="navbar-brand" href="#" style="color:#fff; font-family: 'Madita';"">Bagidelo</a>
+      <a class="navbar-brand" href="#" style="color:#fff; font-family: 'Madita'; font-size: 25px;"">Bagidelo</a>
     </div>
     <div class="collapse navbar-collapse" id="myNavbar">
 <form class="navbar-form navbar-left">
-      <div class="input-group">
-          <div class="input-group-btn">
-          <button class="btn btn-default" type="submit" style="width:40px;">
-            <i class="glyphicon glyphicon-search"></i>
-          </button>
-        </div>
-        <input type="text" class="form-control" placeholder="Search"> 
-      </div>
-    </form>
+  <div class="input-group">
+    <input type="text" class="form-control" placeholder="Search">
+  </div>
+</form>
       <ul class="nav navbar-nav navbar-right">
         <a href="#"><button class="btn btn-danger navbar-btn" style="border:none; background-color:#c0392b;">Sign Up</button></a>
-        <a href="#"><button class="btn btn-default navbar-btn" style="border:none; color:#c0392b">Sign In</button></a>
+        <a href="{{url('/login')}}"><button class="btn btn-default navbar-btn" style="border:none; color:#c0392b">Sign In</button></a>
       </ul>
     </div>
   </div>

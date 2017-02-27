@@ -1,8 +1,12 @@
 html {
       height: 100%;
     }
+    * {
+      -webkit-font-smoothing: antialiased !important;
+    -moz-osx-font-smoothing: grayscale !important;
+    }
     body {
-      background: #f4f4f4 !important;
+      background: #fff!important;
       padding: 0;
       text-align: center;
       font-family: 'Helvetica';
@@ -10,14 +14,17 @@ html {
       margin: 0;
       height: 100%;
       -webkit-font-smoothing: antialiased;
+      font-size:12px;
+      color:#aaa;
     }
 
 h1, h2, h3, h4, h5, h6{
-  font-family: 'Gibson' !important;
+  font-family: 'Helvetica','open sans';
 }
 
 p{
     font-family: 'Helvetica'!important;
+    font-size: 12pt;
 }
     .wrapper {
     	height: 100% !important;
@@ -28,6 +35,7 @@ p{
     
     a {
       text-decoration: none !important;
+      color:#aaa;
 
     }    
     
@@ -178,9 +186,9 @@ btn{
     padding-top:60px;
 }
 .navbar{ 
-
-  margin-bottom:20px !important;
+  border:none;
   border-radius:0px !important; 
-  border:none; padding:10px; 
-  background-color:#e74c3c;
+  background-color:#fff;
+  padding-bottom: 5px;
+  border-bottom:0.5px solid #ddd;
   }
