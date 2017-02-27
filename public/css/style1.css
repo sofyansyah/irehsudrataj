@@ -109,7 +109,7 @@ p{
     }
 .page1 {
   background-color: #ec5f4c;
-  background-image: url('file:///Applications/MAMP/htdocs/irehsudrataj/public/img/header.jpeg');
+  background-image: url('../img/header.jpeg');
   background-size: cover;
   background-attachment: fixed;
 }
