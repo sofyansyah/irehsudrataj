@@ -145,6 +145,9 @@ p{
 .dropdown-menu li a{
   color:#aaa!important;
 }
+.dropdown-menu li a:hover{
+  color:#dd5f4c!important;
+}
 </style>
 
 @section('content')
@@ -252,7 +255,7 @@ p{
       </div>
      </div>
 
-<div class="row">
+<!-- <div class="row">
           <div class="col-md-12 text-left">
              <div class="content-idea">
               <div class="col-md-2" style="float:left;">
@@ -291,7 +294,7 @@ p{
             <button class="btn btn-danger">Learn More</button>
             </div>
         </div>
-      </div>
+      </div> -->
      </div>         
    
 
