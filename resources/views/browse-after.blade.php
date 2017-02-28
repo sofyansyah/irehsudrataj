@@ -46,8 +46,10 @@ li:hover{
   white-space: nowrap;
   position: relative;
 }
-.content-idea h2{margin-left:8px;
-color:#dd5f4c;}
+.content-idea h2{
+  margin-left:8px;
+color:#666;
+}
 
 .content-idea{
   background-color:#fff; 
@@ -220,7 +222,7 @@ p{
 
               <div class="row">
                <div class="col-md-12 text-left">
-                <div class="col-md-12 content-idea">
+                <div class="col-md-12 content-idea" style="padding:10px;">
 
               <div class="col-md-1" style="float:left;">
                 <img src="{{asset('img/heri.png')}}" width="32" height="32" style="border-radius: 2px; margin-left:-15px;">
@@ -441,9 +443,20 @@ p{
      </div>
    
 
-    <div class="col-sm-3 text-left content-idea">
+    <div class="col-sm-3 text-left" style="padding:0!important;">
       <div class="panel">     
-        <ul class="populer"><h4 style="padding-left: 4px; margin-top: -5px;">Popular Idea</h4>
+        <ul class="populer"><h4 style="padding-left: 4px; margin-top: -5px;color: #dd5f4c;">Popular Ideas</h4>
+         <li><a href="">Laundry Online Application</a></li>
+         <li><a href="">Weekend Mengajar</a></li>
+         <li><a href="">Bersepeda ke Monas</a></li>
+         <li><a href="">Website responsive</a></li>
+         <li><a href="">Downhill bareng</a></li>
+         <li><a href="">Kopdar komunitas mural</a></li>
+         <li><a href="">Diskusi ukm di bogor</a></li>
+        </ul>
+      </div>   
+      <div class="panel">     
+        <ul class="populer"><h4 style="padding-left: 4px; margin-top: -5px; color: #dd5f4c;">Popular Teamwork</h4>
          <li><a href="">Laundry Online Application</a></li>
          <li><a href="">Weekend Mengajar</a></li>
          <li><a href="">Bersepeda ke Monas</a></li>
@@ -459,7 +472,7 @@ p{
 
 
 <div class="panel-footer">
-<ul class="footer" style="padding:5px 0 10px; max-width: 990px;margin: 0 auto;">
+<ul class="footer" style="padding:5px; max-width: 990px;margin: 0 auto;">
   <li style="float:left;">&copy 2017 Bagidelo</li>
   <li><a href="">About Us</a></li>
   <li><a href="">Contact</a></li>
