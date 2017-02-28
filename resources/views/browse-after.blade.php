@@ -2,7 +2,6 @@
 
 <style>
 
-
 .container{
   max-width:900px;
 }
@@ -91,7 +90,7 @@ font-size: 14px;
 
 .btn-default{
   border:none !important;
-  background-color: #f9f9f9!important;
+  background-color: #fff!important;
   color:#aaa;
 }
 .col-sm-12{
@@ -144,6 +143,11 @@ p{
 .dropdown-menu li a{
   color:#aaa!important;
 }
+.dropdown-menu li a:hover{
+  color:#dd5f4c!important;
+}
+.more-content {display:none;}
+.visible {display:block;}
 </style>
 
 @section('content')
@@ -173,9 +177,9 @@ p{
         <li><a href="#"><img src="{{asset('/img/img/notif.svg')}}" height="25px"></a></li>
         <li><div class="dropdown">
                 <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true" style="padding:15px;">
-                 <li><img style="border-radius:2px;" src="{{asset('/img/gua.png')}}" height="25px"></button>
+                 <li><img style="border-radius:2px;" src="{{asset('/img/heri.png')}}" height="25px"></button>
                     <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
-                      <li><a href="#">Sofyan Syah</a></li>
+                      <li><a href="#">Herry</a></li>
                       <li><a href="#">Account Setting</a></li>
                       <li><a href="#">Message</a></li>
                       <li><a href="#">Log Out</a></li>
@@ -219,10 +223,10 @@ p{
                 <div class="col-md-12 content-idea">
 
               <div class="col-md-1" style="float:left;">
-                <img src="{{asset('img/gua.png')}}" width="32" height="32" style="border-radius: 2px; margin-left:-15px;">
+                <img src="{{asset('img/heri.png')}}" width="32" height="32" style="border-radius: 2px; margin-left:-15px;">
               </div>
-              <div class="col-md-9">
-                <input type="text" class="form-control" style="border-radius:0!important; background:none!important; border:none!important; box-shadow:none!important;padding: 0; font-size: 18px;" placeholder="Share idea to build community, create a stuff, hangout and build your awesome project" aria-describedby="basic-addon1" style="background-color: #F9f9f9; border: 1px solid #f2f2f2; box-shadow: none;">
+              <div class="col-md-11">
+                <input type="text" class="form-control" style="border-radius:0!important; background:none!important; border:none!important; box-shadow:none!important;padding: 0; font-size: 16px;" placeholder="Write an Idea..." aria-describedby="basic-addon1" style="background-color: #F9f9f9; border: 1px solid #f2f2f2; box-shadow: none;">
                 </div>
              </div>
             </div>
@@ -232,7 +236,7 @@ p{
           <div class="col-md-12 text-left">
             <div class="col-md-12 content-idea">
               <div class="col-md-1" style="float:left;">
-                <img src="{{asset('img/gua.png')}}" width="32" height="32" style="border-radius: 2px; margin-left:-15px;">
+                <img src="{{asset('img/iwan.png')}}" width="32" height="32" style="border-radius: 2px; margin-left:-15px;">
               </div>
               <div class="col-md-9" style="padding:0px;">
                 <h2 style="padding:0px; margin:0px;">Sofyan Syah</h2>
@@ -251,7 +255,58 @@ p{
                 Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
                 Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
                 </p>
-                
+                <br/>
+                <!-- <div class="comment">
+                <input type="text" class="form-control" style="border-radius:0!important; background:none!important; border:none!important; box-shadow:none!important;" placeholder="Write a comment..." aria-describedby="basic-addon1" style="background-color: #F9f9f9; border: 1px solid #f2f2f2; box-shadow: none;">
+                </div> -->
+            </div>
+            <!-- <div class="col-md-9 pull-left">
+              <ul class="icon-content">
+                 <li><img src="{{asset('/img/img/love.svg')}}" height="20px"> 10</li>
+                 <li><img src="{{asset('/img/img/comment.svg')}}" height="20px"> 25</li>
+                 <li><img src="{{asset('/img/img/user.svg')}}" height="20px"> 12</li>
+            </ul>
+              
+            </div> -->
+            <div class="col-md-3 pull-right">
+              <!-- <div class="dropdown" style="float:right;">
+                <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true" style="border;none;">
+                  <span class="glyphicon glyphicon-option-horizontal"></span></button>
+                    <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+                      <li><a href="#">Bookmark idea</a></li>
+                      <li><a href="#">Report idea</a></li>
+                      <li><a href="#">Editidea</a></li>
+                      <li><a href="#">Delete idea</a></li>
+                    </ul>
+              </div>  -->    
+         </div>
+        </div>
+      </div>
+     </div>
+
+     <div class="row">
+          <div class="col-md-12 text-left">
+            <div class="col-md-12 content-idea">
+              <div class="col-md-1" style="float:left;">
+                <img src="{{asset('img/gua.png')}}" width="32" height="32" style="border-radius: 2px; margin-left:-15px;">
+              </div>
+              <div class="col-md-9 col-xs-9" style="padding:0px;">
+                <h2 style="padding:0px; margin:0px;">Sofyan Syah</h2>
+                <p style="font-size: 12px;">Jakarta, Indonesia</p>
+              </div>
+              <div class="col-md-2" style="padding:0px;">
+              <a href="" class="participating">Participating</a>
+              </div>
+              <div class="col-md-12" style="padding:0px;">
+              <br/>
+              <p>
+              <b>Laundry Mobile Application</b>
+              </p>
+              <br/>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.<br/>
+                Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                </p>
                 <hr/>
                 <div class="comment">
                 <input type="text" class="form-control" style="border-radius:0!important; background:none!important; border:none!important; box-shadow:none!important;" placeholder="Write a comment..." aria-describedby="basic-addon1" style="background-color: #F9f9f9; border: 1px solid #f2f2f2; box-shadow: none;">
@@ -286,12 +341,12 @@ p{
               <div class="col-md-1" style="float:left;">
                 <img src="{{asset('img/gua.png')}}" width="32" height="32" style="border-radius: 2px; margin-left:-15px;">
               </div>
-              <div class="col-md-9" style="padding:0px;">
+              <div class="col-md-9 col-xs-9" style="padding:0px;">
                 <h2 style="padding:0px; margin:0px;">Sofyan Syah</h2>
                 <p style="font-size: 12px;">Jakarta, Indonesia</p>
               </div>
               <div class="col-md-2" style="padding:0px;">
-              <a href="/" class="participating">Participating</a>
+              <a href="" class="participating">Participating</a>
               </div>
               <div class="col-md-12" style="padding:0px;">
               <br/>
@@ -303,7 +358,6 @@ p{
                 Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
                 Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
                 </p>
-                
                 <hr/>
                 <div class="comment">
                 <input type="text" class="form-control" style="border-radius:0!important; background:none!important; border:none!important; box-shadow:none!important;" placeholder="Write a comment..." aria-describedby="basic-addon1" style="background-color: #F9f9f9; border: 1px solid #f2f2f2; box-shadow: none;">
@@ -336,14 +390,14 @@ p{
           <div class="col-md-12 text-left">
             <div class="col-md-12 content-idea">
               <div class="col-md-1" style="float:left;">
-                <img src="{{asset('img/gua.png')}}" width="32" height="32" style="border-radius: 2px; margin-left:-15px;">
+                <img src="{{asset('img/heri.png')}}" width="32" height="32" style="border-radius: 2px; margin-left:-15px;">
               </div>
-              <div class="col-md-9" style="padding:0px;">
+              <div class="col-md-9 col-xs-9" style="padding:0px;">
                 <h2 style="padding:0px; margin:0px;">Sofyan Syah</h2>
                 <p style="font-size: 12px;">Jakarta, Indonesia</p>
               </div>
               <div class="col-md-2" style="padding:0px;">
-              <a href="/" class="participating">Participating</a>
+              <a href="" class="participating">Participating</a>
               </div>
               <div class="col-md-12" style="padding:0px;">
               <br/>
@@ -355,7 +409,6 @@ p{
                 Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
                 Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
                 </p>
-                
                 <hr/>
                 <div class="comment">
                 <input type="text" class="form-control" style="border-radius:0!important; background:none!important; border:none!important; box-shadow:none!important;" placeholder="Write a comment..." aria-describedby="basic-addon1" style="background-color: #F9f9f9; border: 1px solid #f2f2f2; box-shadow: none;">
@@ -384,9 +437,8 @@ p{
         </div>
       </div>
      </div>
-
+     
      </div>
-
    
 
     <div class="col-sm-3 text-left content-idea">
@@ -400,12 +452,11 @@ p{
          <li><a href="">Kopdar komunitas mural</a></li>
          <li><a href="">Diskusi ukm di bogor</a></li>
         </ul>
-      </div>   
+      </div>    
     </div> 
   </div>
 </div>
 
-</br>
 
 <div class="panel-footer">
 <ul class="footer" style="padding:5px 0 10px; max-width: 990px;margin: 0 auto;">
@@ -421,7 +472,5 @@ p{
   
   
   </div>
-
-
 
 @endsection
